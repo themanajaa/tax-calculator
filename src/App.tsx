@@ -24,16 +24,16 @@ function App() {
   return (
     <div className="min-h-screen gradient-bg">
       {/* Header */}
-      <header className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40">
+      <header className="bg-gray-800/95 backdrop-blur-sm border-b border-gray-700 sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3">
               <Calculator className="w-8 h-8 text-primary-600" />
               <div>
-                <h1 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h1 className="text-xl font-bold text-white">
                   Tax Estimator
                 </h1>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-gray-300">
                   2025 Federal Tax Calculator • Educational Demo
                 </p>
               </div>
@@ -159,7 +159,7 @@ function App() {
       </main>
 
       {/* Educational Disclaimer */}
-      <footer className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 mt-16">
+      <footer className="bg-gray-800/95 backdrop-blur-sm border-t border-gray-700 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4 mb-6">
