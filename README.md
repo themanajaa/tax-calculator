@@ -7,7 +7,6 @@ A modern, user-friendly tax calculator for 2025 US federal taxes. Built with Rea
 - **Real-time Tax Calculations** - See your tax breakdown instantly as you type
 - **Interactive Charts** - Visual breakdown of your tax composition
 - **AI Assistant** - Get answers to tax questions and explanations
-- **Dark Mode** - Easy on the eyes, day or night
 - **Mobile Responsive** - Works perfectly on all devices
 - **Fast Performance** - Built with modern web technologies
 
@@ -61,7 +60,7 @@ A modern, user-friendly tax calculator for 2025 US federal taxes. Built with Rea
 
 ## Built With
 
-- React 18
+- React 22
 - TypeScript
 - Tailwind CSS
 - Framer Motion
@@ -71,14 +70,10 @@ A modern, user-friendly tax calculator for 2025 US federal taxes. Built with Rea
 
 This calculator is for educational and demonstration purposes only. While I've made every effort to ensure accuracy using the latest 2025 tax brackets and deductions, real tax situations can be complex. For actual tax filing, please consult with a qualified tax professional or use official IRS resources.
 
-## Contributing
-
-Feel free to fork this project and submit pull requests. I welcome any improvements or bug fixes.
-
 ## License
 
 This project is licensed under the MIT License.
 
 ---
 
-**Created by Sami Abdelmlek**
+**Built with ❤️ by Sami Abdelmlek**
