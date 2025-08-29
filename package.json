@@ -1,0 +1,62 @@
+{
+  "name": "tax-calculator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A modern, user-friendly federal tax calculator for 2025. Built with React, TypeScript, and Tailwind CSS. Perfect for educational purposes and tax estimation.",
+  "keywords": [
+    "tax",
+    "calculator",
+    "react",
+    "typescript",
+    "tailwind",
+    "financial",
+    "2025"
+  ],
+  "author": "Sami Abdelmlek",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "@types/node": "^24.3.0",
+    "autoprefixer": "^10.4.21",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.542.0",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^19.1.1",
+    "recharts": "^3.1.2",
+    "tailwindcss": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "yarn": ">=1.22.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themanajaa/tax-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/themanajaa/tax-calculator/issues"
+  },
+  "homepage": "https://github.com/themanajaa/tax-calculator#readme"
+}
