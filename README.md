@@ -74,5 +74,6 @@ This calculator is for educational and demonstration purposes only. While I've m
 
 This project is licensed under the MIT License.
 
+---
 
 **Built with ❤️ by Sami Abdelmlek**
