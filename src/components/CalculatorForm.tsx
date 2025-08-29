@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Calculator, RotateCcw } from 'lucide-react';
-export * from '../types/tax';
+import type { TaxInputs, FilingStatus, DeductionType } from '../types/tax';
 import { getFilingStatusLabel, getDeductionTypeLabel } from '../utils/taxEngine';
 
 interface CalculatorFormProps {
@@ -39,10 +39,10 @@ export function CalculatorForm({
       className="card-hover"
     >
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                 <h2 className="text-2xl font-bold text-white mb-2">
           Tax Calculator
         </h2>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-gray-400">
           Enter your information to calculate your 2025 federal tax estimate
         </p>
       </div>
@@ -86,7 +86,7 @@ export function CalculatorForm({
 
         {/* Pre-tax Contributions */}
         <div className="space-y-4">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                     <h3 className="text-lg font-semibold text-white">
             Pre-tax Contributions
           </h3>
           

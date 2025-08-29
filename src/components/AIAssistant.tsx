@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-export * from '../types/tax';
 import { Bot, Send, X, Loader2 } from 'lucide-react';
+import type { AIAssistantMessage } from '../types/tax';
 
 interface AIAssistantProps {
   isOpen: boolean;
@@ -93,17 +93,17 @@ export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 300 }}
           transition={{ duration: 0.3 }}
-          className="fixed right-4 bottom-4 w-96 h-[500px] bg-white dark:bg-gray-800 rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 flex flex-col z-50"
+          className="fixed right-4 bottom-4 w-96 h-[500px] bg-gray-800 rounded-xl shadow-2xl border border-gray-700 flex flex-col z-50"
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="flex items-center justify-between p-4 border-b border-gray-700">
             <div className="flex items-center gap-2">
               <Bot className="w-5 h-5 text-primary-600" />
-              <h3 className="font-semibold text-gray-900 dark:text-white">Tax Assistant</h3>
+              <h3 className="font-semibold text-white">Tax Assistant</h3>
             </div>
             <button
               onClick={onClose}
-              className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              className="text-gray-400 hover:text-gray-200"
             >
               <X className="w-5 h-5" />
             </button>
@@ -122,7 +122,7 @@ export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
                   className={`max-w-[80%] p-3 rounded-lg ${
                     message.type === 'user'
                       ? 'bg-primary-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white'
+                      : 'bg-gray-700 text-white'
                   }`}
                 >
                   <p className="text-sm">{message.content}</p>
@@ -139,7 +139,7 @@ export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
                 animate={{ opacity: 1, y: 0 }}
                 className="flex justify-start"
               >
-                <div className="bg-gray-100 dark:bg-gray-700 p-3 rounded-lg">
+                <div className="bg-gray-700 p-3 rounded-lg">
                   <Loader2 className="w-5 h-5 animate-spin text-primary-600" />
                 </div>
               </motion.div>
@@ -147,7 +147,7 @@ export function AIAssistant({ isOpen, onClose }: AIAssistantProps) {
           </div>
 
           {/* Input */}
-          <div className="p-4 border-t border-gray-200 dark:border-gray-700">
+          <div className="p-4 border-t border-gray-700">
             <div className="flex gap-2">
               <input
                 type="text"

@@ -88,10 +88,10 @@ function App() {
                 className="card-hover text-center py-12"
               >
                 <Calculator className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   Ready to Calculate
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-gray-400">
                   Fill out the form and click "Calculate Tax" to see your results
                 </p>
               </motion.div>
@@ -107,10 +107,10 @@ function App() {
           className="mt-16"
         >
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Professional Tax Calculator
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
               Built with modern React, TypeScript, and Tailwind CSS. Features real-time calculations, 
               beautiful visualizations, and AI-powered assistance.
             </p>
@@ -121,10 +121,10 @@ function App() {
               <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Calculator className="w-6 h-6 text-primary-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="font-semibold text-white mb-2">
                 Accurate Calculations
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-400">
                 Uses 2025 federal tax brackets and standard deductions for precise estimates
               </p>
             </div>
@@ -133,10 +133,10 @@ function App() {
               <div className="w-12 h-12 bg-success-100 dark:bg-success-900/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Bot className="w-6 h-6 text-success-600" />
               </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="font-semibold text-white mb-2">
                 AI Assistant
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-400">
                 Get instant answers to tax questions and explanations of complex concepts
               </p>
             </div>
@@ -147,10 +147,10 @@ function App() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+              <h3 className="font-semibold text-white mb-2">
                 Visual Charts
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-400">
                 Interactive pie charts and breakdowns to understand your tax composition
               </p>
             </div>
@@ -177,7 +177,7 @@ function App() {
               </p>
             </div>
             
-            <div className="text-sm text-gray-500 dark:text-gray-400">
+            <div className="text-sm text-gray-400">
               <p className="mb-2">
                 Built with React, TypeScript, Tailwind CSS, and Framer Motion
               </p>
@@ -185,7 +185,7 @@ function App() {
                 Tax data sourced from IRS 2025 tax brackets and standard deductions
               </p>
               <p className="text-xs">
-              Built with ❤️ by <span className="font-medium text-gray-700 dark:text-gray-300">Sami Abdelmlek</span>
+              Built with ❤️ by <span className="font-medium text-gray-300">Sami Abdelmlek</span>
               </p>
             </div>
           </div>

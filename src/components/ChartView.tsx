@@ -33,7 +33,7 @@ export function ChartView({ calculation }: ChartViewProps) {
     if (active && payload && payload.length) {
       return (
         <div className="bg-white dark:bg-gray-800 p-3 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg">
-          <p className="font-semibold text-gray-900 dark:text-white">
+          <p className="font-semibold text-white">
             {payload[0].name}
           </p>
           <p className="text-primary-600 font-medium">
@@ -53,7 +53,7 @@ export function ChartView({ calculation }: ChartViewProps) {
             className="w-3 h-3 rounded-full"
             style={{ backgroundColor: entry.color }}
           />
-          <span className="text-sm text-gray-700 dark:text-gray-300">
+          <span className="text-sm text-gray-300">
             {entry.value}
           </span>
         </div>
@@ -69,11 +69,11 @@ export function ChartView({ calculation }: ChartViewProps) {
       className="card-hover"
     >
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-white mb-2 flex items-center gap-2">
           <PieChartIcon className="w-6 h-6 text-primary-600" />
           Tax Breakdown
         </h2>
-        <p className="text-gray-600 dark:text-gray-400">
+        <p className="text-gray-400">
           Visual breakdown of your tax calculation
         </p>
       </div>
@@ -103,19 +103,19 @@ export function ChartView({ calculation }: ChartViewProps) {
       {/* Summary Stats */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
         <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
-          <p className="text-sm text-gray-600 dark:text-gray-400">Tax Owed</p>
+          <p className="text-sm text-gray-400">Tax Owed</p>
           <p className="text-lg font-semibold text-red-600">
             {formatCurrency(calculation.federalTaxOwed)}
           </p>
         </div>
         <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-          <p className="text-sm text-gray-600 dark:text-gray-400">Deductions</p>
+          <p className="text-sm text-gray-400">Deductions</p>
           <p className="text-lg font-semibold text-green-600">
             {formatCurrency(calculation.totalDeductions)}
           </p>
         </div>
         <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-          <p className="text-sm text-gray-600 dark:text-gray-400">Taxable Income</p>
+          <p className="text-sm text-gray-400">Taxable Income</p>
           <p className="text-lg font-semibold text-blue-600">
             {formatCurrency(calculation.taxableIncome)}
           </p>
